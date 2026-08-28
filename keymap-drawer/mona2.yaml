@@ -13,35 +13,35 @@ layers:
   - P
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
   - G
   - PAGE UP
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
+  - {t: J, h: LCTRL}
+  - {t: K, h: RSHFT}
+  - {t: L, h: LALT}
   - {t: ;, h: RIGHT GUI}
   - Z
   - X
   - C
   - V
   - B
-  - BT
-  - PAGE DOWN
+  - SCR
+  - {t: B, h: SYM}
   - N
   - M
-  - ','
-  - .
-  - /
+  - {t: ',', h: SCR}
+  - {t: ., h: SCR}
+  - {t: /, h: SCR}
   - LCTRL
   - LALT
   - LEFT GUI
-  - TAB
+  - {t: TAB, h: FNC}
+  - {t: BACKSPACE, h: NUM}
+  - {t: ENTER, h: SYM}
+  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: SPACE, h: NUM}
-  - {t: SPACE, h: SYM}
-  - BACKSPACE
-  - {t: BACKSPACE, h: SYM}
   - RCTRL
   NUM:
   - '1'
@@ -84,7 +84,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - RIGHT SHIFT
-  - RIGHT SHIFT
+  - {t: RIGHT SHIFT, type: held alternate}
   - {t: ▽, type: trans}
   SYM:
   - ESC
@@ -114,22 +114,22 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
   - {t: ▽, type: trans}
-  MOUSE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  FNC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -166,13 +166,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LCTRL
+  - {t: LCTRL, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  BT:
+  SYS:
   - F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -199,25 +199,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SCROLL:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -230,6 +213,9 @@ layers:
   - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  SCR:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -249,6 +235,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -260,22 +260,36 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [2, 3]
-  k: '['
-- p: [6, 7]
-  k: ']'
-- p: [12, 13]
   k: (
-- p: [18, 17]
+- p: [6, 7]
   k: )
-- p: [23, 24]
-  k: '{'
-- p: [29, 30]
-  k: '}'
-- p: [4, 5]
-  k: \
-- p: [14, 15]
-  k: '|'
-- p: [19, 20]
+- p: [16, 28]
+  k: '&mkp MB5'
+- p: [17, 29]
+  k: '&mkp MB4'
+- p: [18, 30]
+  k: '&mkp LCLK'
+- p: [19, 31]
+  k: '&mkp RCLK'
+- p: [30, 31]
+  k: '&mkp MCLK'
+- p: [9, 20]
+  k: BSPC
+- p: [20, 32]
   k: ENTER
-- p: [11, 12]
-  k: SCROLL
+- p: [17, 19]
+  k: RALT
+- p: [18, 20]
+  k: RCTRL
+- p: [0, 1]
+  k: ESC
+- p: [10, 21]
+  k: Ctl+Z
+- p: [11, 22]
+  k: Ctl+X
+- p: [12, 23]
+  k: Ctl+C
+- p: [13, 24]
+  k: Ctl+V
+- p: [39, 40]
+  k: FNC
