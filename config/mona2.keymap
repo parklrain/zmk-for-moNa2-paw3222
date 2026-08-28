@@ -14,54 +14,89 @@
     combos {
         compatible = "zmk,combos";
 
-        combo1 {
-            bindings = <&kp LEFT_BRACKET>;
+        combo_lpar {
+            bindings = <&kp LPAR>;
             key-positions = <2 3>;
         };
 
-        combo2 {
-            bindings = <&kp RIGHT_BRACKET>;
+        combo_rpar {
+            bindings = <&kp RPAR>;
             key-positions = <6 7>;
         };
 
-        combo3 {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <12 13>;
+        combo_next {
+            bindings = <&mkp MB5>;
+            key-positions = <16 28>;
         };
 
-        combo4 {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <18 17>;
+        combo_prev {
+            bindings = <&mkp MB4>;
+            key-positions = <17 29>;
         };
 
-        combo5 {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <23 24>;
+        combo_lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 30>;
         };
 
-        combo6 {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <29 30>;
+        combo_rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 31>;
         };
 
-        combo7 {
-            bindings = <&kp NON_US_BACKSLASH>;
-            key-positions = <4 5>;
+        combo_mclk {
+            bindings = <&mkp MCLK>;
+            key-positions = <30 31>;
         };
 
-        combo8 {
-            bindings = <&kp PIPE>;
-            key-positions = <14 15>;
+        combo_bapc {
+            bindings = <&kp BSPC>;
+            key-positions = <9 20>;
         };
 
-        combo9 {
+        combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 20>;
+            key-positions = <20 32>;
         };
 
-        combo10 {
-            bindings = <&mo 5>;
-            key-positions = <11 12>;
+        combo_lang {
+            bindings = <&kp RALT>;
+            key-positions = <17 19>;
+        };
+
+        combo_hanja {
+            bindings = <&kp RCTRL>;
+            key-positions = <18 20>;
+        };
+
+        combo_esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        combo_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <10 21>;
+        };
+
+        combo_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <11 22>;
+        };
+
+        combo_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <12 23>;
+        };
+
+        combo_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <13 24>;
+        };
+
+        combo_fnc {
+            bindings = <&mo 3>;
+            key-positions = <39 40>;
         };
     };
 
@@ -95,6 +130,63 @@
 
             tap-ms = <20>;
         };
+
+        hmr: homerow_right_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_RIGHT_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 36 37 38 39 40>;
+            hold-trigger-on-release;
+        };
+
+        hml: homerow_left_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LEFT_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 28 29 30 31 32 36 37 38 39 40>;
+            hold-trigger-on-release;
+        };
+
+        sk_shft: sk_shft {
+            compatible = "zmk,behavior-sticky-key";
+            label = "SK_SHFT";
+            bindings = <&kp>;
+            #binding-cells = <1>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
+        magic_shft_tap: magic_shft_tap {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAGIC_SHFT_TAP";
+            bindings = <&sk_shft LSHFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        magic_shft: magic_shft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAGIC_SHFT";
+            bindings = <&kp>, <&magic_shft_tap>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
@@ -102,17 +194,17 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W           &kp E         &kp R             &kp T                                        &kp Y            &kp U              &kp I        &kp O            &kp P
-&hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D   &hm LEFT_SHIFT F  &kp G                         &kp PAGE_UP    &kp H            &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
-&kp Z           &kp X           &kp C         &kp V             &kp B        &mo 4            &kp PAGE_DOWN  &kp N            &kp M              &kp COMMA    &kp PERIOD       &kp SLASH
-&kp LCTRL       &kp LALT        &kp LEFT_GUI  &kp TAB           &lt 1 SPACE  &lt 2 SPACE      &kp BACKSPACE  &lt 2 BACKSPACE                                                   &kp RCTRL
+&kp Q            &kp W            &kp E         &kp R         &kp T                                                    &kp Y        &kp U         &kp I         &kp O        &kp P
+&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LSHFT D  &hml LCTRL F  &kp G                               &kp PAGE_UP          &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RIGHT_GUI SEMICOLON
+&kp Z            &kp X            &kp C         &kp V         &kp B             &mo 5             &lt 2 B              &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
+&kp LCTRL        &kp LALT         &kp LEFT_GUI  &ltq 3 TAB    &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                           &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
             display-name = "BASE";
         };
 
-        NUM {
+        Num_layer {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6     &kp N7     &kp N8     &kp N9  &kp N0
 &trans        &trans        &trans        &kp LC(F5)    &kp F12              &trans           &kp MINUS        &kp EQUAL  &kp GRAVE  &trans  &kp SQT
@@ -124,7 +216,7 @@
             display-name = "NUM";
         };
 
-        layer_2 {
+        Sym_layer {
             bindings = <
 &kp ESC   &trans  &trans  &trans  &trans                      &trans  &kp HOME        &kp UP_ARROW  &kp END    &bootloader
 &kp CAPS  &trans  &trans  &trans  &trans              &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &kp DELETE
@@ -136,7 +228,7 @@
             display-name = "SYM";
         };
 
-        MOUSE {
+        Fnc_layer {
             bindings = <
 &trans  &trans    &trans    &trans     &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &mkp MB1  &mkp MB3  &mkp MB2   &trans              &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
@@ -145,10 +237,10 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-            display-name = "MOUSE";
+            display-name = "FNC";
         };
 
-        BT {
+        Sys_layer {
             bindings = <
 &kp F1  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans        &trans        &trans        &trans        &trans
@@ -157,10 +249,10 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-            display-name = "BT";
+            display-name = "SYS";
         };
 
-        SCROLL {
+        Scroll_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
@@ -169,7 +261,16 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-            display-name = "SCROLL";
+            display-name = "SCR";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Sys_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };
