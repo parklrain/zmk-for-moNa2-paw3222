@@ -51,7 +51,7 @@
 
         combo_bapc {
             bindings = <&kp BSPC>;
-            key-positions = <9 20>;
+            key-positions = <9 8>;
         };
 
         combo_enter {
@@ -97,6 +97,46 @@
         combo_fnc {
             bindings = <&mo 3>;
             key-positions = <39 40>;
+        };
+
+        combo_lwin {
+            bindings = <&kp LWIN>;
+            key-positions = <0 10>;
+        };
+
+        combo_lalt {
+            bindings = <&kp LALT>;
+            key-positions = <1 11>;
+        };
+
+        combo_lshft {
+            bindings = <&kp LSHFT>;
+            key-positions = <2 12>;
+        };
+
+        combo_lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <3 13>;
+        };
+
+        combo_rctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <6 17>;
+        };
+
+        combo_rshft {
+            bindings = <&kp LSHFT>;
+            key-positions = <7 18>;
+        };
+
+        combo_ralt {
+            bindings = <&kp LALT>;
+            key-positions = <8 19>;
+        };
+
+        combo_rwin {
+            bindings = <&kp RWIN>;
+            key-positions = <9 20>;
         };
     };
 
@@ -194,10 +234,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W            &kp E         &kp R         &kp T                                                    &kp Y        &kp U         &kp I         &kp O        &kp P
-&hml LEFT_GUI A  &hml LEFT_ALT S  &hml LSHFT D  &hml LCTRL F  &kp G                               &kp PAGE_UP          &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RIGHT_GUI SEMICOLON
-&kp Z            &kp X            &kp C         &kp V         &kp B             &mo 5             &lt 2 B              &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
-&kp LCTRL        &kp LALT         &kp LEFT_GUI  &ltq 3 TAB    &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                           &kp RCTRL
+&kp Q      &kp W     &kp E         &kp R       &kp T                                                    &kp Y        &kp U  &kp I         &kp O       &kp P
+&kp A      &kp S     &kp D         &kp F       &kp G                               &kp PAGE_UP          &kp H        &kp J  &kp K         &kp L       &kp SEMI
+&kp Z      &kp X     &kp C         &kp V       &kp B             &mo 5             &lt 2 B              &kp N        &kp M  &ltq 5 COMMA  &ltq 5 DOT  &ltq 5 SLASH
+&kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
