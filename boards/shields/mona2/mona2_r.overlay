@@ -73,7 +73,7 @@
     device = <&trackball_central>;
 
     // 通常のポインター移動 + オートマウスレイヤー（閾値付き）
-    input-processors = <&zip_threshold_temp_layer 3 500>;  //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
+    /* input-processors = <&zip_threshold_temp_layer 3 500>; */ //オートマウスレイヤー（100ピクセル移動後、レイヤー3に500ms切り替え）
 
     scroller {
         layers = <5>;
