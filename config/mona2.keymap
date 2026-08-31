@@ -174,8 +174,6 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
         };
 
         hmr: homerow_right_mods {
@@ -235,19 +233,6 @@
             flavor = "balanced";
         };
 
-        scroll_test: scroll_test {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL_TEST";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
-
-        scroll_test2: scroll_test2 {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "SCROLL_TEST2";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -261,7 +246,7 @@
 &kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
-            sensor-bindings = <&msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&scroll_up_down>;
             display-name = "BASE";
         };
 
