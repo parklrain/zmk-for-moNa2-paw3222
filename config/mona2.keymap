@@ -234,6 +234,13 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
         };
+
+        rot_scroll: sensor_rotate_mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -247,7 +254,7 @@
 &kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&rot_scroll SCRL_DOWN SCRL_UP>;
             display-name = "BASE";
         };
 
