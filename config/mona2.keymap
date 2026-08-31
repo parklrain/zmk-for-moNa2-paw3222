@@ -247,7 +247,7 @@
 &kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp MOVE_Y(20) MOVE_Y(-20)>;
+            sensor-bindings = <&inc_dec_kp SCRL_DOWN SCRL_UP>;
             display-name = "BASE";
         };
 
