@@ -235,6 +235,14 @@
             flavor = "balanced";
         };
 
+        scroll_test: scroll_test {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_TEST";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp PG_DN>, <&kp PG_UP>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -248,7 +256,7 @@
 &kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp PGDN PGUP>;
+            sensor-bindings = <&scroll_test>;
             display-name = "BASE";
         };
 
