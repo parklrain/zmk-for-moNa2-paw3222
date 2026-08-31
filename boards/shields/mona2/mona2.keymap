@@ -107,7 +107,7 @@
 &kp LCTRL       &kp LGUI        &kp LALT     &kp TAB           &lt 1 SPACE  &mo 3           &kp SPACE  &ltq 2 BACKSPACE                                  &kp RIGHT_GUI    &kp RCTRL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&msc SCRL_DOWN SCRL_UP>;
             display-name = "BASE";
         };
 
