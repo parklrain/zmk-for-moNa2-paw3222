@@ -247,7 +247,7 @@
 &kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp RCTRL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "BASE";
         };
 
