@@ -49,7 +49,7 @@ layers:
   - '8'
   - '9'
   - '-'
-  - PG UP
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UP
   - BSPC
@@ -59,8 +59,8 @@ layers:
   - '5'
   - '6'
   - +
-  - {t: ▽, type: trans}
-  - PAGE DOWN
+  - PG UP
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
@@ -71,9 +71,9 @@ layers:
   - '3'
   - '='
   - SPACE
-  - {t: ▽, type: trans}
-  - HOME
+  - PG DN
   - END
+  - ENTER
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,7 +83,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: '0', type: held}
   - {t: ▽, type: trans}
-  - .
+  - {t: ▽, type: trans}
   - {t: '0', type: held alternate}
   - {t: ▽, type: trans}
   SYM:
