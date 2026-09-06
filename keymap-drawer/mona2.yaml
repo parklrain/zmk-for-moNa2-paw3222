@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LSHFT}
   - {t: F, h: LCTRL}
   - G
-  - {t: PG UP, h: FNC}
+  - PG UP
   - H
   - {t: J, h: LCTRL}
   - {t: K, h: RSHFT}
@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - SCR
-  - {t: B, h: SYM}
+  - {t: B, h: FNC}
   - N
   - M
   - {t: ',', h: SCR}
@@ -37,11 +37,11 @@ layers:
   - LCTRL
   - LALT
   - LEFT GUI
-  - {t: TAB, h: FNC}
-  - {t: BACKSPACE, h: NUM}
-  - {t: ENTER, h: SYM}
-  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
+  - {t: TAB, h: SYM}
   - {t: SPACE, h: NUM}
+  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
+  - {t: ENTER, h: SYM}
+  - {t: BSPC, h: NUM}
   - LCTRL
   NUM:
   - '`'
@@ -70,7 +70,7 @@ layers:
   - '2'
   - '3'
   - '='
-  - {t: ▽, type: trans}
+  - SPACE
   - {t: ▽, type: trans}
   - HOME
   - END
@@ -114,7 +114,7 @@ layers:
   - '#'
   - '|'
   - {t: ▽, type: trans}
-  - {t: VOL DN, type: held}
+  - VOL DN
   - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -123,10 +123,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FNC:
@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - {t: PG UP, type: held}
+  - PG UP
   - HOME
   - F4
   - F5
@@ -157,7 +157,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - PG DN
+  - {t: PG DN, type: held}
   - END
   - F1
   - F2
@@ -167,7 +167,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {type: held alternate}
   - {type: held alternate}
@@ -199,8 +199,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -211,9 +211,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {type: held alternate}
   - '&bootloader'
   SCR:
   - {t: ▽, type: trans}
@@ -291,8 +291,6 @@ combos:
   k: Ctl+C
 - p: [13, 24]
   k: Ctl+V
-- p: [39, 40]
-  k: FNC
 - p: [0, 10]
   k: LWIN
 - p: [1, 11]
@@ -313,3 +311,7 @@ combos:
   k: '['
 - p: [6, 5]
   k: ']'
+- p: [26, 37]
+  k: SYS
+- p: [27, 40]
+  k: SYS
