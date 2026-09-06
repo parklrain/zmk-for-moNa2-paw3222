@@ -11,17 +11,17 @@ layers:
   - I
   - O
   - P
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LWIN}
+  - {t: S, h: LALT}
+  - {t: D, h: LSHFT}
+  - {t: F, h: LCTRL}
   - G
   - {t: PG UP, h: FNC}
   - H
-  - J
-  - K
-  - L
-  - ;
+  - {t: J, h: LCTRL}
+  - {t: K, h: RSHFT}
+  - {t: L, h: LALT}
+  - {t: ;, h: RWIN}
   - Z
   - X
   - C
