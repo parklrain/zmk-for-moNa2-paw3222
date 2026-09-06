@@ -16,7 +16,7 @@ layers:
   - D
   - F
   - G
-  - PAGE UP
+  - {t: PG UP, h: FNC}
   - H
   - J
   - K
@@ -42,40 +42,40 @@ layers:
   - {t: ENTER, h: SYM}
   - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: SPACE, h: NUM}
-  - RCTRL
+  - LCTRL
   NUM:
   - '`'
-  - HOME
-  - END
-  - BSPC
-  - DEL
-  - '-'
   - '7'
   - '8'
   - '9'
-  - '*'
-  - RALT
-  - LEFT
-  - UP
-  - RIGHT
+  - '-'
   - PG UP
-  - SPACE
-  - +
+  - {t: ▽, type: trans}
+  - UP
+  - BSPC
+  - DEL
+  - '*'
   - '4'
   - '5'
   - '6'
-  - ''''
-  - RCTRL
-  - '['
+  - +
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - LEFT
   - DOWN
-  - ']'
-  - PG DN
-  - ENTER
-  - '='
-  - ','
+  - RIGHT
+  - ''''
+  - RALT
   - '1'
   - '2'
   - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,37 +88,37 @@ layers:
   - {t: ▽, type: trans}
   SYM:
   - '~'
-  - PREV
-  - PLAY PAUSE
-  - NEXT
-  - MUTE
-  - _
   - '&'
   - '*'
+  - {t: ▽, type: trans}
+  - _
+  - PREV
+  - NEXT
+  - UP
   - BSPC
   - DEL
   - CAPS
-  - LEFT
-  - UP
-  - RIGHT
-  - VOL UP
-  - {t: ▽, type: trans}
-  - \
   - $
   - '%'
   - ^
-  - '"'
-  - {t: ▽, type: trans}
-  - '{'
+  - \
+  - VOL UP
+  - PLAY PAUSE
+  - LEFT
   - DOWN
-  - '}'
-  - VOL DN
-  - {t: ▽, type: trans}
-  - {type: held}
-  - '|'
+  - RIGHT
+  - '"'
+  - RCTRL
   - '!'
   - '@'
   - '#'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: VOL DN, type: held}
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
-  - PG UP
+  - {t: PG UP, type: held}
   - HOME
   - F4
   - F5
@@ -166,7 +166,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held alternate}
@@ -309,3 +309,7 @@ combos:
   k: LALT
 - p: [9, 20]
   k: RWIN
+- p: [3, 4]
+  k: '['
+- p: [6, 5]
+  k: ']'
