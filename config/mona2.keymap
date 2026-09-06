@@ -255,8 +255,8 @@
         default_layer {
             bindings = <
 &kp Q        &kp W        &kp E         &kp R         &kp T                                                &kp Y        &kp U         &kp I         &kp O        &kp P
-&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                  &kp PG_UP     &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B         &mo 5                    &lt 3 B       &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
+&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                  &kp G         &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B         &mo 5                    &kp B         &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
 &kp LCTRL    &kp LALT     &kp LEFT_GUI  &ltq 2 TAB    &ltq 1 SPACE  &magic_shft LSHFT 0      &ltq 2 ENTER  &ltq 1 BSPC                                           &kp LCTRL
             >;
 
