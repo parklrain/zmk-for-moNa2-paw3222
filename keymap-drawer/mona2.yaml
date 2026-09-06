@@ -180,9 +180,9 @@ layers:
   - {t: BT, h: '4'}
   - BT CLR
   - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT BLE
+  - OUT USB
+  - OUT TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
