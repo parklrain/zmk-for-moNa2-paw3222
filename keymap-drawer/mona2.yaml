@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - SCR
-  - B
+  - {t: B, h: FNC}
   - N
   - M
   - {t: ',', h: SCR}
@@ -37,10 +37,10 @@ layers:
   - LCTRL
   - LALT
   - LEFT GUI
-  - {t: TAB, h: SYM}
+  - {t: TAB, h: FNC}
   - {t: SPACE, h: NUM}
-  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: ENTER, h: SYM}
+  - {t: LSHFT, h: LSHFT, s: '&caps_word'}
   - {t: BSPC, h: NUM}
   - LCTRL
   NUM:
@@ -123,11 +123,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
+  - {type: held alternate}
   - {t: ▽, type: trans}
   FNC:
   - ESC
@@ -157,7 +157,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - PG DN
+  - {t: PG DN, type: held}
   - END
   - F1
   - F2
@@ -166,11 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {type: held alternate}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   SYS:
   - {t: BT, h: '0'}
@@ -199,8 +199,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {type: held alternate}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -209,11 +209,11 @@ layers:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held alternate}
+  - {type: held}
   - '&bootloader'
   SCR:
   - {t: ▽, type: trans}
@@ -311,7 +311,5 @@ combos:
   k: '['
 - p: [6, 5]
   k: ']'
-- p: [26, 37]
-  k: SYS
-- p: [27, 40]
-  k: SYS
+- p: [39, 40]
+  k: SYM
