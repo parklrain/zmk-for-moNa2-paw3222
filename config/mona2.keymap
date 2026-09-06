@@ -194,8 +194,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            require-prior-idle-ms = <200>;
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 21 22 23 24 25 36 37 38 39 40>;
             hold-trigger-on-release;
         };
@@ -208,8 +208,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            flavor = "balanced";
+            require-prior-idle-ms = <200>;
+            flavor = "tap-preferred";
             hold-trigger-key-positions = <5 6 7 8 9 16 17 18 19 20 28 29 30 31 32 36 37 38 39 40>;
             hold-trigger-on-release;
         };
@@ -249,10 +249,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W     &kp E         &kp R       &kp T                                                    &kp Y        &kp U  &kp I         &kp O       &kp P
-&kp A      &kp S     &kp D         &kp F       &kp G                               &lt 3 PG_UP          &kp H        &kp J  &kp K         &kp L       &kp SEMI
-&kp Z      &kp X     &kp C         &kp V       &kp B             &mo 5             &lt 2 B              &kp N        &kp M  &ltq 5 COMMA  &ltq 5 DOT  &ltq 5 SLASH
-&kp LCTRL  &kp LALT  &kp LEFT_GUI  &ltq 3 TAB  &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                   &kp LCTRL
+&kp Q        &kp W        &kp E         &kp R         &kp T                                                    &kp Y        &kp U         &kp I         &kp O        &kp P
+&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                               &lt 3 PG_UP          &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B             &mo 5             &lt 2 B              &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
+&kp LCTRL    &kp LALT     &kp LEFT_GUI  &ltq 3 TAB    &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                           &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
