@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LSHFT}
   - {t: F, h: LCTRL}
   - G
-  - PG UP
+  - G
   - H
   - {t: J, h: LCTRL}
   - {t: K, h: RSHFT}
@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - SCR
-  - {t: B, h: FNC}
+  - B
   - N
   - M
   - {t: ',', h: SCR}
@@ -157,7 +157,7 @@ layers:
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - {t: PG DN, type: held}
+  - PG DN
   - END
   - F1
   - F2
@@ -166,11 +166,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held alternate}
-  - {type: held alternate}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   SYS:
   - {t: BT, h: '0'}
