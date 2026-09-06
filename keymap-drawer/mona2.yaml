@@ -54,7 +54,7 @@ layers:
   - '8'
   - '9'
   - '*'
-  - {t: ▽, type: trans}
+  - RALT
   - LEFT
   - UP
   - RIGHT
@@ -65,7 +65,7 @@ layers:
   - '5'
   - '6'
   - ''''
-  - {t: ▽, type: trans}
+  - RCTRL
   - '['
   - DOWN
   - ']'
