@@ -99,11 +99,6 @@
             key-positions = <13 24>;
         };
 
-        combo_fnc {
-            bindings = <&mo 3>;
-            key-positions = <39 40>;
-        };
-
         combo_lwin {
             bindings = <&kp LWIN>;
             key-positions = <0 10>;
@@ -152,6 +147,16 @@
         combo_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <6 5>;
+        };
+
+        combo_sys {
+            bindings = <&mo 4>;
+            key-positions = <26 37>;
+        };
+
+        combo_sys2 {
+            bindings = <&mo 4>;
+            key-positions = <27 40>;
         };
     };
 
@@ -249,10 +254,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R         &kp T                                                    &kp Y        &kp U         &kp I         &kp O        &kp P
-&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                               &lt 3 PG_UP          &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B             &mo 5             &lt 2 B              &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
-&kp LCTRL    &kp LALT     &kp LEFT_GUI  &ltq 3 TAB    &ltq 1 BACKSPACE  &ltq 2 ENTER      &magic_shft LSHFT 0  &lt 1 SPACE                                           &kp LCTRL
+&kp Q        &kp W        &kp E         &kp R         &kp T                                                &kp Y        &kp U         &kp I         &kp O        &kp P
+&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                                  &kp PG_UP     &kp H        &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
+&kp Z        &kp X        &kp C         &kp V         &kp B         &mo 5                    &lt 3 B       &kp N        &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
+&kp LCTRL    &kp LALT     &kp LEFT_GUI  &ltq 2 TAB    &ltq 1 SPACE  &magic_shft LSHFT 0      &ltq 2 ENTER  &ltq 1 BSPC                                           &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
@@ -261,10 +266,10 @@
 
         Num_layer {
             bindings = <
-&kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS                       &kp PG_UP      &trans    &kp UP    &kp BSPC   &kp DEL
-&kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS               &trans   &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SQT
-&kp RALT   &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans      &trans   &kp HOME       &kp END   &trans    &trans     &trans
-&trans     &trans  &trans  &trans  &kp N0     &trans      &kp DOT  &kp N0                                        &trans
+&kp GRAVE  &kp N7  &kp N8  &kp N9  &kp MINUS                          &kp PG_UP      &trans    &kp UP    &kp BSPC   &kp DEL
+&kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS                  &trans   &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SQT
+&kp RALT   &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp SPACE      &trans   &kp HOME       &kp END   &trans    &trans     &trans
+&trans     &trans  &trans  &trans  &kp N0     &trans         &kp DOT  &kp N0                                        &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -325,7 +330,7 @@
 
         Sys_layer {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 };
