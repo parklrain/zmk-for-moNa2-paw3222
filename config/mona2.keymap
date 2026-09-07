@@ -52,7 +52,7 @@
 
         combo_mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <18 19>;
+            key-positions = <30 31>;
         };
 
         combo_bapc {
@@ -67,12 +67,12 @@
 
         combo_lang {
             bindings = <&kp RALT>;
-            key-positions = <29 30>;
+            key-positions = <17 19>;
         };
 
         combo_hanja {
             bindings = <&kp RCTRL>;
-            key-positions = <30 31>;
+            key-positions = <18 20>;
         };
 
         combo_esc {
@@ -212,7 +212,7 @@
 &kp Q        &kp W        &kp E         &kp R         &kp T                                               &kp Y         &kp U         &kp I         &kp O        &kp P
 &hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp G                &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
 &kp Z        &kp X        &kp C         &kp V         &kp B        &mo 5             &ltq 3 B             &kp N         &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 SLASH
-&kp LCTRL    &kp LALT     &kp LEFT_GUI  &ltq 3 TAB    &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                                           &kp LCTRL
+&kp LCTRL    &kp LWIN     &kp LALT      &ltq 3 TAB    &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                                           &kp LCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN UP>;
