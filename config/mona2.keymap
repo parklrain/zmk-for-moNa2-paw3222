@@ -245,10 +245,10 @@
 
         Fnc_layer {
             bindings = <
-&kp ESC          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                                  &kp LC(Y)  &kp F7         &kp F8         &kp F9        &kp F12
-&hml LWIN LC(A)  &hml LALT LC(S)  &trans          &trans           &trans                        &kp PG_UP  &kp HOME   &hmr LCTRL F4  &hmr RSHFT F5  &hmr LALT F6  &hmr RWIN F11
-&kp LC(Z)        &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &kp PG_DN  &kp END    &kp F1         &kp F2         &kp F3        &kp F10
-&trans           &trans           &trans          &trans           &trans     &trans             &trans     &trans                                                 &trans
+&kp ESC          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                                 &kp LC(Y)  &kp F7         &kp F8         &kp F9        &kp F12
+&hml LWIN LC(A)  &hml LALT LC(S)  &trans          &trans           &trans                        &kp HOME  &kp PG_UP  &hmr LCTRL F4  &hmr RSHFT F5  &hmr LALT F6  &hmr RWIN F11
+&kp LC(Z)        &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &kp END   &kp PG_DN  &kp F1         &kp F2         &kp F3        &kp F10
+&trans           &trans           &trans          &trans           &trans     &trans             &trans    &trans                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
