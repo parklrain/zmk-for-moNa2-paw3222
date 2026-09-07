@@ -45,37 +45,37 @@ layers:
   - LCTRL
   NUM:
   - '`'
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UP
   - BSPC
   - DEL
+  - '-'
+  - '7'
+  - '8'
+  - '9'
   - '*'
-  - '4'
-  - '5'
-  - '6'
-  - +
+  - RALT
+  - {t: LEFT, h: LALT}
+  - {t: DOWN, h: LSHFT}
+  - {t: RIGHT, h: LCTRL}
   - PG UP
   - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - ''''
-  - RALT
+  - +
+  - {t: '4', h: LCTRL}
+  - {t: '5', h: RSHFT}
+  - {t: '6', h: LALT}
+  - {t: '''', h: RWIN}
+  - RCTRL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PG DN
+  - SPACE
+  - END
+  - ','
   - '1'
   - '2'
   - '3'
-  - '='
-  - SPACE
-  - PG DN
-  - END
-  - ENTER
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,42 +83,42 @@ layers:
   - {t: ▽, type: trans}
   - {t: '0', type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
   - {t: '0', type: held alternate}
   - {t: ▽, type: trans}
   SYM:
   - '~'
+  - PREV
+  - UP
+  - NEXT
+  - PLAY PAUSE
+  - _
   - '&'
   - '*'
-  - {t: ▽, type: trans}
-  - _
-  - PREV
-  - NEXT
-  - UP
   - BSPC
   - DEL
   - CAPS
-  - $
-  - '%'
-  - ^
-  - \
-  - VOL UP
-  - PLAY PAUSE
   - LEFT
   - DOWN
   - RIGHT
+  - VOL UP
+  - '&msc SCRL_UP'
+  - \
+  - $
+  - '%'
+  - ^
   - '"'
-  - RCTRL
+  - '&msc SCRL_UP'
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
+  - VOL DN
+  - MUTE
+  - '&msc SCRL_DOWN'
+  - '|'
   - '!'
   - '@'
   - '#'
-  - '|'
-  - {t: ▽, type: trans}
-  - VOL DN
-  - MUTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -140,17 +140,17 @@ layers:
   - F8
   - F9
   - F12
-  - Ctl+A
-  - Ctl+S
+  - {t: Ctl+A, h: LWIN}
+  - {t: Ctl+S, h: LALT}
   - {t: ▽, type: trans}
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PG UP
   - HOME
-  - F4
-  - F5
-  - F6
-  - F11
+  - {t: F4, h: LCTRL}
+  - {t: F5, h: RSHFT}
+  - {t: F6, h: LALT}
+  - {t: F11, h: RWIN}
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -271,15 +271,15 @@ combos:
   k: '&mkp LCLK'
 - p: [19, 31]
   k: '&mkp RCLK'
-- p: [30, 31]
+- p: [18, 19]
   k: '&mkp MCLK'
-- p: [9, 8]
+- p: [9, 20]
   k: BSPC
 - p: [20, 32]
   k: ENTER
-- p: [17, 19]
+- p: [29, 30]
   k: RALT
-- p: [18, 20]
+- p: [30, 31]
   k: RCTRL
 - p: [0, 1]
   k: ESC
@@ -291,22 +291,6 @@ combos:
   k: Ctl+C
 - p: [13, 24]
   k: Ctl+V
-- p: [0, 10]
-  k: LWIN
-- p: [1, 11]
-  k: LALT
-- p: [2, 12]
-  k: LSHFT
-- p: [3, 13]
-  k: LCTRL
-- p: [6, 17]
-  k: LCTRL
-- p: [7, 18]
-  k: LSHFT
-- p: [8, 19]
-  k: LALT
-- p: [9, 20]
-  k: RWIN
 - p: [3, 4]
   k: '['
 - p: [6, 5]
