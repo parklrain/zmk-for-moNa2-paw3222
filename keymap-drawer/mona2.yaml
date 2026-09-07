@@ -145,8 +145,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
   - HOME
+  - PG UP
   - {t: F4, h: LCTRL}
   - {t: F5, h: RSHFT}
   - {t: F6, h: LALT}
@@ -157,8 +157,8 @@ layers:
   - Ctl+V
   - Ctl+B
   - Ctl+Sft+Z
-  - {t: PG DN, type: held}
-  - END
+  - {t: END, type: held}
+  - PG DN
   - F1
   - F2
   - F3
