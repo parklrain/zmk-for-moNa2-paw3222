@@ -35,8 +35,8 @@ layers:
   - {t: ., h: SCR}
   - {t: /, h: SCR}
   - LCTRL
+  - LWIN
   - LALT
-  - LEFT GUI
   - {t: TAB, h: FNC}
   - {t: BSPC, h: NUM}
   - {t: ENTER, h: SYM}
@@ -271,15 +271,15 @@ combos:
   k: '&mkp LCLK'
 - p: [19, 31]
   k: '&mkp RCLK'
-- p: [18, 19]
+- p: [30, 31]
   k: '&mkp MCLK'
 - p: [9, 20]
   k: BSPC
 - p: [20, 32]
   k: ENTER
-- p: [29, 30]
+- p: [17, 19]
   k: RALT
-- p: [30, 31]
+- p: [18, 20]
   k: RCTRL
 - p: [0, 1]
   k: ESC
