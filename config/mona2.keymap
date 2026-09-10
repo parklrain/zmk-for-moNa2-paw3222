@@ -209,8 +209,6 @@
             label = "SCROLL_TEST";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-
-            tap-ms = <20>;
         };
     };
 
@@ -237,7 +235,7 @@
 &trans     &trans          &trans           &trans            &kp N0     &trans         &kp DOT   &kp N0                                                 &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             display-name = "NUM";
         };
 
