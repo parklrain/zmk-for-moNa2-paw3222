@@ -203,6 +203,15 @@
             quick-tap-ms = <150>;
             flavor = "balanced";
         };
+
+        scroll_test: scroll_test {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SCROLL_TEST";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -216,7 +225,7 @@
 &kp LCTRL    &kp LWIN     &kp LALT      &ltq 3 TAB    &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                                           &kp LCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&scroll_test SCRL_DOWN SCRL_UP>;
             display-name = "BASE";
         };
 
