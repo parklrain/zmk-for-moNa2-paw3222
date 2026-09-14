@@ -66,11 +66,11 @@ layers:
   - {t: '6', h: LALT}
   - {t: '''', h: RWIN}
   - RCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG DN
+  - ENTER
+  - '='
   - SPACE
+  - PG DN
+  - {t: ▽, type: trans}
   - END
   - ','
   - '1'
