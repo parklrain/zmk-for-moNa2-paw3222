@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LSHFT}
   - {t: F, h: LCTRL}
   - G
-  - G
+  - HOME
   - H
   - {t: J, h: LCTRL}
   - {t: K, h: RSHFT}
@@ -28,12 +28,12 @@ layers:
   - V
   - B
   - SCR
-  - {t: B, h: FNC}
+  - {t: END, h: FNC}
   - N
   - M
   - {t: ',', h: SCR}
   - {t: ., h: SCR}
-  - {t: /, h: SCR}
+  - {t: B, h: SCR}
   - LCTRL
   - LWIN
   - LALT
@@ -59,24 +59,24 @@ layers:
   - {t: DOWN, h: LSHFT}
   - {t: RIGHT, h: LCTRL}
   - PG UP
-  - HOME
+  - '='
   - +
   - {t: '4', h: LCTRL}
   - {t: '5', h: RSHFT}
   - {t: '6', h: LALT}
   - {t: '''', h: RWIN}
   - RCTRL
-  - ENTER
-  - '='
-  - SPACE
-  - PG DN
   - {t: ▽, type: trans}
+  - HOME
   - END
+  - PG DN
+  - ENTER
+  - SPACE
   - ','
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,7 +119,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - {t: ▽, type: trans}
+  - '?'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
