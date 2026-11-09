@@ -22,12 +22,12 @@
 
         combo_lpar {
             bindings = <&kp LPAR>;
-            key-positions = <2 12>;
+            key-positions = <2 1>;
         };
 
         combo_rpar {
             bindings = <&kp RPAR>;
-            key-positions = <7 18>;
+            key-positions = <7 8>;
         };
 
         combo_next {
@@ -67,12 +67,12 @@
 
         combo_lang {
             bindings = <&kp RALT>;
-            key-positions = <17 19>;
+            key-positions = <29 30>;
         };
 
         combo_hanja {
             bindings = <&kp RCTRL>;
-            key-positions = <18 20>;
+            key-positions = <28 29>;
         };
 
         combo_esc {
@@ -102,12 +102,12 @@
 
         combo_lbkt {
             bindings = <&kp LBKT>;
-            key-positions = <3 13>;
+            key-positions = <3 2>;
         };
 
         combo_rbkt {
             bindings = <&kp RBKT>;
-            key-positions = <6 17>;
+            key-positions = <6 7>;
         };
 
         combo_sym {
@@ -117,12 +117,52 @@
 
         combo_lbrc {
             bindings = <&kp LBRC>;
-            key-positions = <4 14>;
+            key-positions = <4 3>;
         };
 
         combo_rbrc {
             bindings = <&kp RBRC>;
-            key-positions = <16 5>;
+            key-positions = <5 6>;
+        };
+
+        combo_lwin {
+            bindings = <&kp LWIN>;
+            key-positions = <4 14>;
+        };
+
+        combo_lctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <3 13>;
+        };
+
+        combo_lshft {
+            bindings = <&kp LSHFT>;
+            key-positions = <2 12>;
+        };
+
+        combo_lalt {
+            bindings = <&kp LALT>;
+            key-positions = <1 11>;
+        };
+
+        combo_rwin {
+            bindings = <&kp RWIN>;
+            key-positions = <5 16>;
+        };
+
+        combo_rctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <17 6>;
+        };
+
+        combo_rshft {
+            bindings = <&kp RSHFT>;
+            key-positions = <7 18>;
+        };
+
+        combo_ralt {
+            bindings = <&kp LALT>;
+            key-positions = <19 8>;
         };
     };
 
@@ -227,10 +267,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W        &kp E         &kp R         &kp T                                               &kp Y         &kp U         &kp I         &kp O        &kp P
-&hml LWIN A  &hml LALT S  &hml LSHFT D  &hml LCTRL F  &kp G                          &kp HOME             &kp H         &hmr LCTRL J  &hmr RSHFT K  &hmr LALT L  &hmr RWIN SEMI
-&kp Z        &kp X        &kp C         &kp V         &kp B        &mo 5             &ltq 3 END           &kp N         &kp M         &ltq 5 COMMA  &ltq 5 DOT   &ltq 5 B
-&kp LCTRL    &kp LWIN     &kp LALT      &ltq 3 TAB    &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                                           &kp LCTRL
+&kp Q      &kp W     &kp E     &kp R       &kp T                                               &kp Y         &kp U  &kp I         &kp O       &kp P
+&kp A      &kp S     &kp D     &kp F       &kp G                          &kp HOME             &kp H         &kp J  &kp K         &kp L       &kp SEMI
+&kp Z      &kp X     &kp C     &kp V       &kp B        &mo 5             &ltq 3 END           &kp N         &kp M  &ltq 5 COMMA  &ltq 5 DOT  &ltq 5 B
+&kp LCTRL  &kp LWIN  &kp LALT  &ltq 3 TAB  &ltq 1 BSPC  &ltq 2 ENTER      &magic_shft LSHFT 0  &ltq 1 SPACE                                   &kp LCTRL
             >;
 
             sensor-bindings = <&scroll_test SCRL_DOWN SCRL_UP>;
@@ -239,10 +279,10 @@
 
         Num_layer {
             bindings = <
-&kp GRAVE  &trans          &kp UP           &kp BSPC          &kp DEL                              &kp MINUS  &kp N7         &kp N8         &kp N9        &kp ASTRK
-&kp RALT   &hml LALT LEFT  &hml LSHFT DOWN  &hml LCTRL RIGHT  &kp PG_UP                 &kp EQUAL  &kp PLUS   &hmr LCTRL N4  &hmr RSHFT N5  &hmr LALT N6  &hmr RWIN SQT
-&kp RCTRL  &trans          &kp HOME         &kp END           &kp PG_DN  &kp ENTER      &kp SPACE  &kp COMMA  &kp N1         &kp N2         &kp N3        &kp SLASH
-&trans     &trans          &trans           &trans            &kp N0     &trans         &kp DOT    &kp N0                                                 &trans
+&kp GRAVE  &trans    &kp UP    &kp BSPC   &kp DEL                              &kp MINUS  &kp N7  &kp N8  &kp N9  &kp ASTRK
+&kp RALT   &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_UP                 &kp EQUAL  &kp PLUS   &kp N4  &kp N5  &kp N6  &kp SQT
+&kp RCTRL  &trans    &kp HOME  &kp END    &kp PG_DN  &kp ENTER      &kp SPACE  &kp COMMA  &kp N1  &kp N2  &kp N3  &kp SLASH
+&trans     &trans    &trans    &trans     &kp N0     &trans         &kp DOT    &kp N0                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -263,10 +303,10 @@
 
         Fnc_layer {
             bindings = <
-&kp ESC          &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                                 &kp LC(Y)  &kp F7         &kp F8         &kp F9        &kp F12
-&hml LWIN LC(A)  &hml LALT LC(S)  &trans          &trans           &trans                        &kp HOME  &kp PG_UP  &hmr LCTRL F4  &hmr RSHFT F5  &hmr LALT F6  &hmr RWIN F11
-&kp LC(Z)        &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &kp END   &kp PG_DN  &kp F1         &kp F2         &kp F3        &kp F10
-&trans           &trans           &trans          &trans           &trans     &trans             &trans    &trans                                                 &trans
+&kp ESC    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INS                                 &kp LC(Y)  &kp F7  &kp F8  &kp F9  &kp F12
+&kp LC(A)  &kp LC(S)        &trans          &trans           &trans                        &kp HOME  &kp PG_UP  &kp F4  &kp F5  &kp F6  &kp F11
+&kp LC(Z)  &kp LC(X)        &kp LC(C)       &kp LC(V)        &kp LC(B)  &kp LC(LS(Z))      &kp END   &kp PG_DN  &kp F1  &kp F2  &kp F3  &kp F10
+&trans     &trans           &trans          &trans           &trans     &trans             &trans    &trans                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
