@@ -11,17 +11,17 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LWIN}
-  - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
-  - {t: F, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
   - G
   - HOME
   - H
-  - {t: J, h: LCTRL}
-  - {t: K, h: RSHFT}
-  - {t: L, h: LALT}
-  - {t: ;, h: RWIN}
+  - J
+  - K
+  - L
+  - ;
   - Z
   - X
   - C
@@ -55,16 +55,16 @@ layers:
   - '9'
   - '*'
   - RALT
-  - {t: LEFT, h: LALT}
-  - {t: DOWN, h: LSHFT}
-  - {t: RIGHT, h: LCTRL}
+  - LEFT
+  - DOWN
+  - RIGHT
   - PG UP
   - '='
   - +
-  - {t: '4', h: LCTRL}
-  - {t: '5', h: RSHFT}
-  - {t: '6', h: LALT}
-  - {t: '''', h: RWIN}
+  - '4'
+  - '5'
+  - '6'
+  - ''''
   - RCTRL
   - {t: ▽, type: trans}
   - HOME
@@ -140,17 +140,17 @@ layers:
   - F8
   - F9
   - F12
-  - {t: Ctl+A, h: LWIN}
-  - {t: Ctl+S, h: LALT}
+  - Ctl+A
+  - Ctl+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
   - PG UP
-  - {t: F4, h: LCTRL}
-  - {t: F5, h: RSHFT}
-  - {t: F6, h: LALT}
-  - {t: F11, h: RWIN}
+  - F4
+  - F5
+  - F6
+  - F11
   - Ctl+Z
   - Ctl+X
   - Ctl+C
@@ -259,9 +259,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [2, 12]
+- p: [2, 1]
   k: (
-- p: [7, 18]
+- p: [7, 8]
   k: )
 - p: [16, 28]
   k: '&mkp MB5'
@@ -277,9 +277,9 @@ combos:
   k: BSPC
 - p: [20, 32]
   k: ENTER
-- p: [17, 19]
+- p: [29, 30]
   k: RALT
-- p: [18, 20]
+- p: [28, 29]
   k: RCTRL
 - p: [0, 10]
   k: ESC
@@ -291,13 +291,29 @@ combos:
   k: Ctl+C
 - p: [13, 24]
   k: Ctl+V
-- p: [3, 13]
+- p: [3, 2]
   k: '['
-- p: [6, 17]
+- p: [6, 7]
   k: ']'
 - p: [39, 40]
   k: SYM
-- p: [4, 14]
+- p: [4, 3]
   k: '{'
-- p: [16, 5]
+- p: [5, 6]
   k: '}'
+- p: [4, 14]
+  k: LWIN
+- p: [3, 13]
+  k: LCTRL
+- p: [2, 12]
+  k: LSHFT
+- p: [1, 11]
+  k: LALT
+- p: [5, 16]
+  k: RWIN
+- p: [17, 6]
+  k: LCTRL
+- p: [7, 18]
+  k: RSHFT
+- p: [19, 8]
+  k: LALT
